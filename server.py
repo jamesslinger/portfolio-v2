@@ -1,16 +1,19 @@
 from flask import Flask, render_template
+import datetime as dt
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def home_page():
-    return render_template("index.html")
+    current_year = dt.datetime.now().year
+    return render_template("index.html", year=current_year)
 
 
 @app.route("/projects.html")
 def projects():
-    return render_template("projects.html")
+    current_year = dt.datetime.now().year
+    return render_template("projects.html", year=current_year)
 
 
 if __name__ == "__main__":
