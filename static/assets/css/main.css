@@ -163,7 +163,7 @@
 		}
 
 		a:hover {
-			color: #ff7496;
+			color: #0095EA;
 		}
 
 	strong, b {
@@ -541,7 +541,7 @@
 					}
 
 					ul.icons li a:hover:before {
-						text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+						text-shadow: 1.25px 0px 0px #0095EA, -1.25px 0px 0px #0095EA, 0px 1.25px 0px #0095EA, 0px -1.25px 0px #0095EA;
 					}
 
 					ul.icons li a:before {
@@ -557,7 +557,7 @@
 					}
 
 					ul.icons li a:hover {
-						border-color: #ff7496;
+						border-color: #0095EA;
 					}
 
 			@media screen and (max-width: 480px) {
@@ -631,8 +631,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: #ff7496;
-			color: #ff7496 !important;
+			border-color: #0095EA;
+			color: #0095EA !important;
 		}
 
 		input[type="submit"].icon,
@@ -780,6 +780,7 @@ div.gallery {
 
 div.gallery:hover {
   border: 1px solid #777;
+  border-color: #0095EA;
 }
 
 div.gallery img {
@@ -908,4 +909,12 @@ div.desc {
 
 		#projects {
 		    margin-top: 30px;
+		}
+
+		@media screen and (max-width: 600px) {
+				#p-space {
+				visibility: hidden;
+				clear: both;
+				display: block;
+			}
 		}
