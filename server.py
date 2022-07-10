@@ -5,7 +5,7 @@ import git
 app = Flask(__name__)
 
 
-@app.route("https://www.pythonanywhere.com/user/CyberdyneSystem/personal_site", methods=["POST"])
+@app.route("https://www.pythonanywhere.com/user/CyberdyneSystem/files/home/CyberdyneSystem/personal_site", methods=["POST"])
 def webhook():
     if request.method == "POST":
         repo = git.Repo("https://github.com/jamesslinger/Personal-Site-v2.0.git")
