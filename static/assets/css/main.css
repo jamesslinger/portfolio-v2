@@ -785,7 +785,7 @@ div.gallery:hover {
 div.gallery img {
   width: 100%;
   height: auto;
-  margin: -100%;
+  margin: -10%;
 }
 
 div.desc {
@@ -904,4 +904,8 @@ div.desc {
 
 		body.is-ie #wrapper {
 			height: 100%;
+		}
+
+		#projects {
+		    margin-top: 30px;
 		}
