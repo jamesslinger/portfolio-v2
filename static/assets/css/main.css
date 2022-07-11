@@ -913,6 +913,7 @@ div.desc {
 
 		@media screen and (max-width: 600px) {
 				#p-space {
+				height: 10px;
 				visibility: hidden;
 				clear: both;
 				display: block;
