@@ -175,7 +175,7 @@
 	}
 
 	p {
-		margin: 0 0 1.5em 0;
+		margin: 0 0 0.8em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -699,7 +699,7 @@
 		position: relative;
 		max-width: 100%;
 		min-width: 27em;
-		padding: 4.5em 3em 3em 3em ;
+		padding: 3em 3em 3em 3em ;
 		background: #ffffff;
 		border-radius: 4px;
 		cursor: default;
@@ -832,7 +832,7 @@ div.desc {
 		-ms-align-self: -ms-flex-end;
 		align-self: flex-end;
 		width: 100%;
-		padding: 1.5em 0 0 0;
+		padding: 1em 0 0 0;
 		color: rgba(255, 255, 255, 0.75);
 		cursor: default;
 		text-align: center;
@@ -882,7 +882,7 @@ div.desc {
 		perspective: 1000px;
 		position: relative;
 		min-height: 100%;
-		padding: 1.5em;
+		padding: 1.2em;
 		z-index: 2;
 	}
 
