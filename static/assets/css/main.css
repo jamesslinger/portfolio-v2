@@ -1,6 +1,4 @@
-@charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
 /* Reset */
 
@@ -9,8 +7,9 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
+		font-family: 'Source Sans Pro', sans-serif;
 		vertical-align: baseline;
+		font-weight: 400;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {

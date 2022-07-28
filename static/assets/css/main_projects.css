@@ -1,5 +1,4 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
 /*Image gallery + modal*/
 
@@ -73,6 +72,7 @@ h1 {
     font-size: 1.95em;
     letter-spacing: 0.22em;
     margin-top: 0.5em;
+    font-weight: 400;
 }
 
 h2 {
@@ -90,7 +90,7 @@ hr {
 }
 
 p em {
-    font-weight: 900;
+    font-weight: 600;
 }
 
 /*Icons + Nav*/
@@ -283,6 +283,3 @@ ul.actions {
 .button.big {
     font-size: 1.35em;
 }
-
-
-
