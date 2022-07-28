@@ -1,151 +1,218 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>James The Dev</title>
-		<link rel="icon" href="static/images/me_favicon.ico">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="static/assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 8]><script src="static/assets/js/html5shiv.js"></script><![endif]-->
-		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-	</head>
-	<body class="is-loading">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="static/assets/css/main_projects.css">
+    <title>Document</title>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<ul class="icons">
-								<li><a href="/" class="fa-home" title="Back">Home</a></li>
-							</ul>
-							<h1 id="projects">PROJECTS</h1>
-						</header>
-						<hr>
-						<div>
-							<h2>My First Personal Website - v1.0</h2>
-							<p>The first website I built for myself. It's a simple 2 page site using <em>HTML</em> & <em>CSS</em>.</p>
-							<p>Click the images below to see a preview</p>
-							<div class="row row-cols-4 row-cols-md-6">
-								<div class="responsive col">
-									<div class="gallery">
-										<a target="_blank" href="static/images/ws1_dt.jpg">
-										<img src="static/images/ws1_dt.jpg" alt="ws1"></a>
-									</div>
-									<div class="desc">Desktop view</div>
-								</div>
+<body>
 
-								<div class="responsive col">
-									<div class="gallery">
-										<a target="_blank" href="static/images/ws1_mobile.jpg">
-										<img src="static/images/ws1_mobile.jpg" alt="ws1"></a>
-									</div>
-									<div class="desc">Mobile view</div>
-								</div>
+    <div class="bg-wrap">
+        <header>
+            <ul class="icons">
+                <li><a href="/" class="fa-home" title="Back"></a></li>
+            </ul>
+            <h1>PROJECTS</h1>
+        </header>
 
-								<div class="responsive col">
-									<div class="gallery">
-										<a target="_blank" href="static/images/ws1_mnav.jpg">
-										<img src="static/images/ws1_mnav.jpg" alt="ws1"></a>
-									</div>
-									<div class="desc">navbar</div>
-								</div>
+        <hr>
+        <!--YOUTUBE AUDIO DOWNLOADER PROJECT-->
+        <div>
+            <h2>YouTube Audio Downloader</h2>
+            <p>This project allows you to download the audio stream from any YouTube video in MP3 format.</p>
+            <p>It's built using <em>Flask</em>, <em>Bootstrap 5</em>, <em>Pytube</em> and the <em>Python</em> built-in <em>OS</em> and <em>Bytes.IO</em> modules.</p>
+            <p>The site is deployed live on the web via Heroku. Click the images below to see a preview.</p>
+        </div>
+        <div class="container">
+            <div class="row" data-bs-toggle="modal" data-bs-target="#ytdlModal">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/rick_dt.jpg" alt="ws1" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="0"></a>
+                    </div>
+                    <div class="desc">Desktop view</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/rick_m1.jpg" alt="ws1" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="1"></a>
+                    </div>
+                    <div class="desc">Mobile view</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/rick_mbfull.jpg" alt="ws1" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="2"></a>
+                    </div>
+                    <div class="desc">Results</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/rick_mdl.jpg" alt="ws1" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="3"></a>
+                    </div>
+                    <div class="desc">Download modal</div>
+                </div>
+            </div>
+        </div>
+        <ul class="container actions">
+            <li class="row justify-content-center">
+                <a href="https://github.com/jamesslinger/YTDLAudio" class="col-lg-4 col-md-6 col-sm-11 button">View Source Code</a>
+                <a href="https://ytdlaudio.herokuapp.com/" class="col-lg-4 col-md-6 col-sm-11 button">Visit Live Site</a>
+            </li>
+        </ul>
 
-								<div class="responsive col">
-									<div class="gallery">
-										<a target="_blank" href="static/images/ws1_mpro.jpg">
-										<img src="static/images/ws1_mpro.jpg" alt="ws1"></a>
-									</div>
-									<div class="desc">Projects page</div>
-								</div>
-							</div>
-						</div>
+        <hr>
+        <!-- Modal -->
+        <div class="modal fade" id="ytdlModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
 
-						<div class="clearfix"></div>
+                        <div id="ytdlcarouselIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="static/images/rick_dt.jpg" class="d-block w-100" alt="First image">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="static/images/rick_m1.jpg" class="d-block w-100" alt="Second image">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="static/images/rick_mbfull.jpg" class="d-block w-100" alt="Third image">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="static/images/rick_mdl.jpg" class="d-block w-100" alt="Fourth image">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MY FIRST PERSONAL WEBSITE PROJECT-->
+        <div>
+            <h2>My First Personal Website</h2>
+            <p>The first website I built for myself. It's a simple 2 page site using <em>HTML</em> & <em>CSS</em>.</p>
+            <p>Click the images below to see a preview.</p>
+        </div>
+        <div class="container">
+            <div class="row" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/ws1_dt.jpg" alt="ws1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"></a>
+                    </div>
+                    <div class="desc">Desktop view</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/ws1_mobile.jpg" alt="ws1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></a>
+                    </div>
+                    <div class="desc">Mobile view</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/ws1_mnav.jpg" alt="ws1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></a>
+                    </div>
+                    <div class="desc">navbar</div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/ws1_mpro.jpg" alt="ws1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></a>
+                    </div>
+                    <div class="desc">Projects page</div>
+                </div>
+            </div>
+        </div>
+        <ul class="container actions">
+            <li class="row justify-content-center">
+                <a href="https://github.com/jamesslinger/Personal-Site-v1.0" class="col-lg-4 col-md-6 col-sm-11 button">View Source Code</a>
+            </li>
+        </ul>
 
-						<ul class="actions">
-							<li>
-								<a href="https://github.com/jamesslinger/Personal-Site-v1.0" class="button">View Source Code</a>
-							</li>
-						</ul>
+        <hr>
+        <!--Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
 
-						<hr>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="static/images/ws1_dt.jpg" class="d-block w-100" alt="First image">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="static/images/ws1_mobile.jpg" class="d-block w-100" alt="Second image">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="static/images/ws1_mnav.jpg" class="d-block w-100" alt="Third image">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="static/images/ws1_mpro.jpg" class="d-block w-100" alt="Fourth image">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--NAV LINKS-->
+        <div>
+            <ul class="icons">
+                <li><a href="/" class="fa-home" title="Back">Home</a></li>
+                <li><a href="mailto:jamesxslinger@gmail.com" class="fa-envelope" title="Email Me">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/jamesslinger/" class="fa-linkedin" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://github.com/jamesslinger" class="fa-github" title="Github">Github</a></li>
+            </ul>
+        </div>
 
-						<div>
-							<h2>More Coming Soon</h2>
-							<div class="responsive">
-							    <div class="gallery">
-								    <a target="_blank" href="#">
-								    <img src="static/images/coming-soon.png" alt="Coming Soon"></a>
-							    </div>
-								<div class="desc">Coming Soon</div>
-							</div>
-							<div class="responsive">
-							    <div class="gallery">
-								    <a target="_blank" href="#">
-								    <img src="static/images/coming-soon.png" alt="Coming Soon"></a>
-							    </div>
-								<div class="desc">Coming Soon</div>
-							</div>
-							<div class="responsive">
-							    <div class="gallery">
-								    <a target="_blank" href="#">
-								    <img src="static/images/coming-soon.png" alt="Coming Soon"></a>
-							    </div>
-								<div class="desc">Coming Soon</div>
-							</div>
-							<div class="responsive">
-							    <div class="gallery">
-								    <a target="_blank" href="#">
-								    <img src="static/images/coming-soon.png" alt="Coming Soon">
-								    </a>
-							    </div>
-								<div class="desc">Coming Soon</div>
-							</div>
-						</div>
+    </div>
 
-						<div class="clearfix"></div>
+    <footer class="footer">
+        <p id="copyright">&copy; {{ year }}  |  Built by James Slinger</p>
+    </footer>
 
-						<ul class="actions">
-							<li>
-								<a href="#" class="button">View Source Code</a>
-							</li>
-						</ul>
-
-						<hr>
-
-						<footer>
-							<ul class="icons">
-								<li><a href="/" class="fa-home" title="Back">Home</a></li>
-								<li><a href="mailto:jamesxslinger@gmail.com" class="fa-envelope" title="Email Me">Email</a></li>
-								<li><a href="https://www.linkedin.com/in/jamesslinger/" class="fa-linkedin" title="LinkedIn">LinkedIn</a></li>
-								<li><a href="https://github.com/jamesslinger" class="fa-github" title="Github">Github</a></li>
-							</ul>
-						</footer>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; {{ year }}  |  Built by James Slinger</li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="static/assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+</body>
 </html>

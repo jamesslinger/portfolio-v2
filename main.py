@@ -10,7 +10,7 @@ def home_page():
     return render_template("index.html", year=current_year)
 
 
-@app.route("/projects.html")
+@app.route("/projects")
 def projects():
     current_year = dt.datetime.now().year
     return render_template("projects.html", year=current_year)
