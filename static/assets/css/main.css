@@ -21,7 +21,9 @@
 	}
 
 	ol, ul {
-		list-style: none;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
 	}
 
 	blockquote, q {
@@ -332,86 +334,12 @@
 			display: none;
 		}
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
 	select {
 		height: 2.75em;
 	}
 
 	textarea {
 		padding: 0.75em 1em;
-	}
-
-	input[type="checkbox"],
-	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
-		width: 1em;
-		z-index: -1;
-	}
-
-		input[type="checkbox"] + label,
-		input[type="radio"] + label {
-			text-decoration: none;
-			color: #414f57;
-			cursor: pointer;
-			display: inline-block;
-			font-size: 1em;
-			font-weight: 300;
-			padding-left: 2.4em;
-			padding-right: 0.75em;
-			position: relative;
-		}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-transform: none !important;
-			}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				border-radius: 4px;
-				border: solid 1px #c8cccf;
-				content: '';
-				display: inline-block;
-				height: 1.65em;
-				left: 0;
-				line-height: 1.58125em;
-				position: absolute;
-				text-align: center;
-				top: 0.15em;
-				width: 1.65em;
-			}
-
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
-			color: #ff7496;
-			content: '\f00c';
-		}
-
-		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before {
-			border-color: #ff7496;
-		}
-
-	input[type="checkbox"] + label:before {
-		border-radius: 4px;
-	}
-
-	input[type="radio"] + label:before {
-		border-radius: 100%;
 	}
 
 	::-webkit-input-placeholder {
@@ -466,10 +394,12 @@
 		list-style: decimal;
 		margin: 0 0 1.5em 0;
 		padding-left: 1.25em;
+		list-style-type: none;
 	}
 
 		ol li {
 			padding-left: 0.25em;
+			list-style-type: none;
 		}
 
 	ul {
@@ -598,99 +528,30 @@
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		display: inline-block;
-		height: 2.75em;
-		line-height: 2.75em;
-		padding: 0 1.5em;
-		background-color: transparent;
-		border-radius: 4px;
-		border: solid 1px #c8cccf;
-		color: #414f57 !important;
-		cursor: pointer;
-		text-align: center;
-		text-decoration: none;
-		white-space: nowrap;
-	}
+button,
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    display: inline-block;
+    height: 2.75em;
+    line-height: 2.75em;
+    padding: 0 1.5em;
+    background-color: transparent;
+    border-radius: 4px;
+    border: solid 1px #c8cccf;
+    color: #414f57 !important;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
 
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		input[type="button"]:hover,
-		button:hover,
-		.button:hover {
-			border-color: #0095EA;
-			color: #0095EA !important;
-		}
-
-		input[type="submit"].icon,
-		input[type="reset"].icon,
-		input[type="button"].icon,
-		button.icon,
-		.button.icon {
-			padding-left: 1.35em;
-		}
-
-			input[type="submit"].icon:before,
-			input[type="reset"].icon:before,
-			input[type="button"].icon:before,
-			button.icon:before,
-			.button.icon:before {
-				margin-right: 0.5em;
-			}
-
-		input[type="submit"].fit,
-		input[type="reset"].fit,
-		input[type="button"].fit,
-		button.fit,
-		.button.fit {
-			display: block;
-			width: 100%;
-			margin: 0 0 0.75em 0;
-		}
-
-		input[type="submit"].small,
-		input[type="reset"].small,
-		input[type="button"].small,
-		button.small,
-		.button.small {
-			font-size: 0.8em;
-		}
-
-		input[type="submit"].big,
-		input[type="reset"].big,
-		input[type="button"].big,
-		button.big,
-		.button.big {
-			font-size: 1.35em;
-		}
-
-		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
-		input[type="button"].disabled,
-		input[type="button"]:disabled,
-		button.disabled,
-		button:disabled,
-		.button.disabled,
-		.button:disabled {
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
-			pointer-events: none;
-			opacity: 0.5;
-		}
 
 /* Main */
 
@@ -831,22 +692,23 @@ div.desc {
 		-ms-align-self: -ms-flex-end;
 		align-self: flex-end;
 		width: 100%;
-		padding: 1em 0 0 0;
+		padding: 0;
 		color: rgba(255, 255, 255, 0.85);
 		cursor: default;
 		text-align: center;
+		margin-bottom: 0;
 	}
 
 		#footer.copyright {
 			margin: 0;
 			padding: 0;
-			font-size: 0.9em;
+			font-size: 0.8em;
 			list-style: none;
 		}
 
 			#footer.copyright li {
 				display: inline-block;
-				margin: 0 0 0 0.45em;
+				margin: 0;
 				padding: 0 0 0 0.85em;
 				border-left: solid 1px rgba(255, 255, 255, 0.5);
 				line-height: 1;
@@ -881,7 +743,7 @@ div.desc {
 		perspective: 1000px;
 		position: relative;
 		min-height: 100%;
-		padding: 1.2em;
+		padding: 0.5em;
 		z-index: 2;
 	}
 
@@ -918,3 +780,8 @@ div.desc {
 				display: block;
 			}
 		}
+
+#footer > div > p {
+    padding-top: 10px;
+    margin: 0;
+}
