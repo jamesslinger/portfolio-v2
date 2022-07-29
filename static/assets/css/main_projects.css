@@ -283,3 +283,17 @@ ul.actions {
 .button.big {
     font-size: 1.35em;
 }
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+.modal {
+    --bs-modal-header-border-color: none;
+    --bs-modal-footer-border-color: none;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
