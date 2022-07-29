@@ -64,6 +64,8 @@ body {
 .footer {
     color: rgba(255, 255, 255, 0.85);
     padding: 0;
+    font-size: 0.9em;
+    font-weight: 400;
 }
 
 /*Fonts + Headings*/
