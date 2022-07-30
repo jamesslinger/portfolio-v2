@@ -10,6 +10,7 @@ div.gallery {
   text-align: center;
   width: 300px
   margin: 1px;
+  border-radius: 4px;
 }
 
 div.gallery:hover {
@@ -44,8 +45,8 @@ body {
     text-align: center;
     color: #414f57;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 0.9rem;
+    font-weight: 400;
     line-height: 2;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -53,8 +54,9 @@ body {
 
 .bg-wrap {
     margin: 20px 20px 5px;
-    padding: 40px 20px;
+    padding: 40px 25px;
     background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
 }
 
 .row {
@@ -74,7 +76,7 @@ h1 {
     font-size: 1.95em;
     letter-spacing: 0.22em;
     margin-top: 0.5em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h2 {
@@ -92,7 +94,7 @@ hr {
 }
 
 p em {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /*Icons + Nav*/
@@ -287,7 +289,7 @@ ul.actions {
 }
 
 .modal-content {
-    background-color: rgba(255, 255, 255, 0.01);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .modal {
