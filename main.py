@@ -1,18 +1,7 @@
 from flask import Flask, render_template
 import datetime as dt
-import git
 
 app = Flask(__name__)
-
-# @app.route("/update_server", methods=["POST"])
-# def webhook():
-#     if request.method == "POST":
-#         repo = git.Repo("https://github.com/jamesslinger/Personal-Site-v2.0.git")
-#         origin = repo.remotes.origin
-#         origin.pull()
-#         return "Updated PythonAnywhere successfully", 200
-#     else:
-#         return "Wrong event type", 400
 
 
 @app.route("/")
