@@ -562,8 +562,8 @@ button,
     display: block;
     position: absolute;
     top: 50%;
-    left: -3em;
-    width: calc(100% + 6em);
+    text-align: center;
+    width: 100%;
     height: 1px;
     z-index: -1;
     background: #c8cccf;
@@ -577,10 +577,10 @@ button,
         /*padding: 4em 2em 2.5em 2em ;*/
     }
 
-    #main .avatar:before {
-        left: -2em;
+/*    #main .avatar:before {
+        left: -2.5em;
         width: calc(100% + 4em);
-    }
+    }*/
 }
 
 body.is-loading #main {
