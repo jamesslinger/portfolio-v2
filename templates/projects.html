@@ -24,6 +24,94 @@
             </ul>
             <h1>PROJECTS</h1>
         </header>
+        <!--FAVOURITE THINGS APP-->
+        <div>
+            <h2>Favourite Things App</h2>
+            <p>A CRUD WebApp to display a flip card list of my top 20 favourite things in any given topic.</p>
+            <p>It utilises <em>SQL</em> to create, update and delete items on demand and with ease. It's built with <em>Python</em>, <em>Flask</em>, <em>Jinja</em>, <em>Bootstrap 5</em>, <em>SQLAlchemy</em>,
+                <em>SQLite</em>, and <em>WTForms</em>.<br>Data is pulled from two <em>API's</em>, the Google/YouTube API and TMDB API.</p>
+            <p>The site is deployed live on the web via Heroku. Click the images below to see a preview.</p>
+        </div>
+        <div class="container">
+            <div class="row" data-bs-toggle="modal" data-bs-target="#ftaModal">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/fta_dt1.jpg" alt="ws1" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="0"></a>
+                    </div>
+                    <div class="desc">Main menu</div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/fta_mb1.jpg" alt="ws1" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="1"></a>
+                    </div>
+                    <div class="desc">Mobile / Songs List</div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/fta_mb2.jpg" alt="ws1" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="2"></a>
+                    </div>
+                    <div class="desc">Mobile / Movies Card</div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="gallery">
+                        <a><img src="static/images/fta_mb3.jpg" alt="ws1" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="3"></a>
+                    </div>
+                    <div class="desc">Mobile / Movies Card</div>
+                </div>
+            </div>
+        </div>
+        <ul class="container actions">
+            <li class="row justify-content-center">
+                <a href="https://github.com/jamesslinger/Favourite-Things-App" class="col-lg-4 col-md-6 col-sm-11 button">View Source Code</a>
+                <a href="https://favouritethingsapp.herokuapp.com/" class="col-lg-4 col-md-6 col-sm-11 button">Visit Live Site</a>
+            </li>
+        </ul>
+        <!-- Modal -->
+        <div class="modal fade" id="ftaModal" tabindex="-1" aria-labelledby="ftaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div id="ftacarouselIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="static/images/fta_dt1.jpg" class="d-block w-100" alt="First image">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="static/images/fta_mb1.jpg" class="d-block w-100" alt="Second image">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="static/images/fta_mb2.jpg" class="d-block w-100" alt="Third image">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="static/images/fta_mb3.jpg" class="d-block w-100" alt="Fourth image">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <hr>
         <!--YOUTUBE AUDIO DOWNLOADER PROJECT-->
@@ -68,7 +156,7 @@
             </li>
         </ul>
         <!-- Modal -->
-        <div class="modal fade" id="ytdlModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="ytdlModal" tabindex="-1" aria-labelledby="ytdlModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -155,7 +243,7 @@
             </li>
         </ul>
         <!--Modal-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="websiteModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
