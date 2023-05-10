@@ -751,3 +751,11 @@ body.is-ie #wrapper {
     padding-top: 10px;
     margin: 0;
 }
+
+@media screen and (min-width: 800px) {
+        #main > header > p:nth-child(5) {
+            padding-left: 100px;
+            padding-right: 100px;
+    }
+}
+
