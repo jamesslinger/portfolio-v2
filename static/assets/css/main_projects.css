@@ -28,9 +28,8 @@ div.desc {
   margin: 1px;
 }
 
-/*.img-box {
-    height: 12rem;
-    object-fit: cover;
+.img-box {
+    margin-bottom: 0.4rem;
 }
 
 .card-img-top {
@@ -73,13 +72,11 @@ body {
 }
 
 .project-desc {
-    margin: 1.5rem 1rem;
-    position: block;
-    width: 100%;
+    margin: 3rem auto 1.5rem;
 }
 
 .row {
-    margin: 2em auto 1em;
+    margin: 1em auto;
 }
 
 .footer {
@@ -91,12 +88,17 @@ body {
 
 .card {
     background-color: rgba(255, 255, 255, 0.35);
-    margin: 1rem 0 0;
+    margin: 0;
 
 }
 
 .card-body h2 {
     margin-top: 15px;
+}
+
+.card-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #api-cont {
@@ -123,7 +125,7 @@ p {
 }
 
 hr {
-    margin: 3em 0;
+    margin: 2em 0;
 }
 
 p em {
