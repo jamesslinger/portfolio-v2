@@ -27,326 +27,139 @@
         </header>
 
         <hr>
-        <!--FAVOURITE THINGS APP-->
-        <div class="project-desc">
-            <h2>Favourite Things App</h2>
-            <p>A CRUD WebApp to display a flip card list of some of my favourite things - currently movies and songs.</p>
-            <p>It utilises <em>SQL</em> to create, update and delete items on demand and with ease. It's built with <em>Python</em>, <em>Flask</em>, <em>Jinja</em>, <em>Bootstrap 5</em>, <em>SQLAlchemy</em>,
-                <em>SQLite</em>, and <em>WTForms</em>.<br>Data is pulled from two separate API, the <em>Google/YouTube API</em> and <em>TMDB API</em>.</p>
-            <p>The site is deployed live on the web. Click the images below to see a preview.</p>
-        </div>
-        <div class="container">
-            <div class="row" data-bs-toggle="modal" data-bs-target="#ftaModal">
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/fta_dt1.jpg" alt="ws1" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="0"></a>
-                    </div>
-                    <div class="desc">Main menu</div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/fta_mb1.jpg" alt="ws1" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="1"></a>
-                    </div>
-                    <div class="desc">Mobile / Song Card</div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/fta_mb2.jpg" alt="ws1" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="2"></a>
-                    </div>
-                    <div class="desc">Mobile / Movie Card</div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/fta_mb3.jpg" alt="ws1" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="3"></a>
-                    </div>
-                    <div class="desc">Mobile / Movie Card </div>
-                </div>
-            </div>
-        </div>
-        <ul class="container actions">
-            <li class="row justify-content-center">
-                <a href="https://github.com/jamesslinger/Favourite-Things-App" class="col-lg-4 col-md-6 col-sm-11 button">View Source Code</a>
-                <a href="https://favourite-things-app.onrender.com/" class="col-lg-4 col-md-6 col-sm-11 button">Visit Live Site</a>
-            </li>
-        </ul>
-        <!-- Modal -->
-        <div class="modal fade" id="ftaModal" tabindex="-1" aria-labelledby="ftaModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
 
-                        <div id="ftacarouselIndicators" class="carousel slide" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                  <img src="static/images/fta_dt1.jpg" class="d-block w-100" alt="First image">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="static/images/fta_mb1.jpg" class="d-block w-100" alt="Second image">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="static/images/fta_mb2.jpg" class="d-block w-100" alt="Third image">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="static/images/fta_mb3.jpg" class="d-block w-100" alt="Fourth image">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#ftacarouselIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-dark" data-bs-dismiss="modal">Close</button>
-                    </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 card-row">
+          <div class="col">
+            <div class="card h-100">
+                <div class="img-box">
+                    <img src="static/images/ff1.jpg" class="card-img-top" alt="flight flavour image">
                 </div>
+                <div class="card-body">
+                    <h5 class="card-title">Flight Flavour App</h5>
+                    <p class="card-text"><br>Built with <em>React</em> and <em>Javascript</em> and utilising components from Material UI.
+                    <br>Find cheap flight deals and book any you find quickly via a third-party API/affiliate link.<br><br>Deployed online at Render.com.</p>
+                </div>
+                <ul class="container actions">
+                    <li class="row justify-content-center">
+                        <a href="https://github.com/jamesslinger/flight_flavour" class="col-12 button">View Code</a>
+                        <a href="https://flightflavour.onrender.com/" class="col-12 button">Visit Site</a>
+                    </li>
+                </ul>
             </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <div class="img-box">
+                    <img src="static/images/todo.jpg" class="card-img-top" alt="to-do list image">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">To-Do List App</h5>
+                    <p class="card-text"><br>A simple 'to-do' list built using <em>Javascript</em>, <em>jQuery</em>, <em>Node</em>, <em>Express</em>, <em>EJS</em>, <em>MongoDB</em> and <em>Mongoose</em>.<br><br>Deployed online at Render.com.</p>
+                </div>
+                <ul class="container actions">
+                    <li class="row justify-content-center">
+                        <a href="https://github.com/jamesslinger/To-Do-List" class="col-12 button">View Code</a>
+                        <a href="https://to-do-list-j8mu.onrender.com/" class="col-12 button">Visit Site</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <div class="img-box">
+                    <img src="static/images/ytdl.jpg" class="card-img-top" alt="youtube audio downloader image">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">YouTube Audio Downloader App</h5>
+                    <p class="card-text"><br><p>This project allows you to download the audio stream from any YouTube video in MP3 format.</p><p>It's built using <em>Flask</em>, <em>Jinja</em>, <em>Bootstrap 5</em>, <em>Pytube</em> and the <em>Python</em> built-in <em>OS</em> and <em>Bytes.IO</em> modules.</p>
+                    <p><br>Deployed online at render.com</p>
+                </div>
+                <ul class="container actions">
+                    <li class="row justify-content-center">
+                        <a href="https://github.com/jamesslinger/YTDLAudio" class="col-12 button">View Code</a>
+                        <a href="https://ytdlaudio.onrender.com/" class="col-12 button">Visit Site</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <div class="img-box">
+                    <img src="static/images/ff.jpg" class="card-img-top" alt="favorite things image">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Favourite Things App</h5>
+                    <p class="card-text"><br><p>A CRUD WebApp that displays a flip card list of my favourite movies and songs.</p>
+                    <p>It utilises <em>SQL</em> to create, update and delete items on demand.<br>It's built with <em>Python</em>, <em>Flask</em>, <em>Jinja</em>, <em>Bootstrap 5</em>, <em>SQLAlchemy</em>,
+                    and <em>WTForms</em>.<br>Data is pulled from the <em>Google/YouTube API</em> and <em>TMDB API</em>.</p>
+                    <p><br>Deployed online at render.com.</p>
+                </div>
+                <ul class="container actions">
+                    <li class="row justify-content-center">
+                        <a href="https://github.com/jamesslinger/Favourite-Things-App" class="col-12 button">View Code</a>
+                        <a href="https://favourite-things-app.onrender.com/" class="col-12 button">Visit Site</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
         </div>
 
         <hr>
-        <!--YOUTUBE AUDIO DOWNLOADER PROJECT-->
-        <div class="project-desc">
-            <h2>YouTube Audio Downloader</h2>
-            <p>This project allows you to download the audio stream from any YouTube video in MP3 format.</p>
-            <p>It's built using <em>Flask</em>, <em>Jinja</em>, <em>Bootstrap 5</em>, <em>Pytube</em> and the <em>Python</em> built-in <em>OS</em> and <em>Bytes.IO</em> modules.</p>
-            <p>The site is deployed live on the web. Click the images below to see a preview.</p>
-        </div>
-        <div class="container">
-            <div class="row" data-bs-toggle="modal" data-bs-target="#ytdlModal">
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/ytdl_dt.jpg" alt="ws1" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="0"></a>
-                    </div>
-                    <div class="desc">Desktop view</div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/ytdl_m.jpg" alt="ws1" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="1"></a>
-                    </div>
-                    <div class="desc">Mobile view</div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/ytdl_mfull.jpg" alt="ws1" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="2"></a>
-                    </div>
-                    <div class="desc">Results Page</div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/ytdl_mod.jpg" alt="ws1" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="3"></a>
-                    </div>
-                    <div class="desc">Download modal</div>
-                </div>
-            </div>
-        </div>
-        <ul class="container actions">
-            <li class="row justify-content-center">
-                <a href="https://github.com/jamesslinger/YTDLAudio" class="col-lg-4 col-md-6 col-sm-11 button">View Source Code</a>
-                <a href="https://ytdlaudio.onrender.com/" class="col-lg-4 col-md-6 col-sm-11 button">Visit Live Site</a>
-            </li>
-        </ul>
-        <!-- Modal -->
-        <div class="modal fade" id="ytdlModal" tabindex="-1" aria-labelledby="ytdlModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
 
-                        <div id="ytdlcarouselIndicators" class="carousel slide" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                  <img src="static/images/ytdl_dt.jpg" class="d-block w-100" alt="First image">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="static/images/ytdl_m.jpg" class="d-block w-100" alt="Second image">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="static/images/ytdl_mfull.jpg" class="d-block w-100" alt="Third image">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="static/images/ytdl_mod.jpg" class="d-block w-100" alt="Fourth image">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#ytdlcarouselIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-dark" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <!--MY FIRST PERSONAL WEBSITE PROJECT-->
-        <div class="project-desc">
-            <h2>My First Personal Website</h2>
-            <p>The first website I built for myself before learning Flask. It was a simple two-page site using <em>HTML</em> & <em>CSS</em>.</p>
-            <p>Click the images below to see a preview.</p>
-        </div>
-        <div class="container">
-            <div class="row" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/ws1_dt.jpg" alt="ws1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"></a>
-                    </div>
-                    <div class="desc">Desktop view</div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/ws1_mobile.jpg" alt="ws1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></a>
-                    </div>
-                    <div class="desc">Mobile view</div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/ws1_mnav.jpg" alt="ws1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></a>
-                    </div>
-                    <div class="desc">navbar</div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                    <div class="gallery">
-                        <a><img src="static/images/ws1_mpro.jpg" alt="ws1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></a>
-                    </div>
-                    <div class="desc">Projects page</div>
-                </div>
-            </div>
-        </div>
-        <ul class="container actions">
-            <li class="row justify-content-center">
-                <a href="https://github.com/jamesslinger/Personal-Site-v1.0" class="col-lg-4 col-md-6 col-sm-11 button">View Source Code</a>
-            </li>
-        </ul>
-        <!--Modal-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="websiteModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                  <img src="static/images/ws1_dt.jpg" class="d-block w-100" alt="First image">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="static/images/ws1_mobile.jpg" class="d-block w-100" alt="Second image">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="static/images/ws1_mnav.jpg" class="d-block w-100" alt="Third image">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="static/images/ws1_mpro.jpg" class="d-block w-100" alt="Fourth image">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-dark" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
         <!-- API & AUTOMATION -->
+
         <div class="project-desc">
             <h2>API & Automation</h2>
             <p>A selection of apps I've created to help me develop my skills but also help me in day-to-day life.</p>
         </div>
-        <div class="container" id="api-cont">
-            <div class="card">
-                <div class="card-body">
-                    <h2>Speed Test Tweeter</h2>
-                    <p>Created as a project to hone my skills with Python and Linux.<br><br>
+        <div class="row row-cols-1 row-cols-md-3 g-2 card-row">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Speed Test Tweeter</h5>
+                <p class="card-text"><br><p>Created as a project to hone my skills with Python and Linux.<br><br>
                         Utilising a <em>Raspberry Pi</em> I've setup a <em>Python</em> application to run a <em>speed test API</em> three times daily using built-in Linux task scheduler <em>Cron</em>.
                         It then writes the test results to a CSV file and tweets them to my bot account using the <em>Twitter API</em>.<br>
-                        If the speed isn't as promised by my ISP a different tweet is posted.
-                    </p>
-                </div>
-                <div class="desc">
-                    <ul class="container actions">
-                        <li class="row justify-content-center">
-                            <a href="https://github.com/jamesslinger/SpeedtestTweet" class="col-lg-4 col-md-6 button">View Source Code</a>
-                            <a href="https://twitter.com/Bird_App_User_" class="col-lg-4 col-md-6 col-sm-12 button">Visit Twitter</a>
-                        </li>
-                    </ul>
-                </div>
+                        If the speed isn't as promised by my ISP a different tweet is posted.</p>
+              </div>
+                <ul class="container actions">
+                    <li class="row justify-content-center">
+                        <a href="https://github.com/jamesslinger/SpeedtestTweet" class="col-12 button">View Code</a>
+                        <a href="https://twitter.com/Bird_App_User_" class="col-12 button">Visit Site</a>
+                    </li>
+                </ul>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h2>Amazon Price Checker</h2>
-                    <p>This project allowed me to practice <em>Web Scraping</em> with <em>Beautiful Soup 4</em> and email with <em>SMTPLIB</em>.<br><br>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Amazon Price Checker</h5>
+                <p class="card-text"><br><p>This project allowed me to practice <em>Web Scraping</em> with <em>Beautiful Soup 4</em> and email with <em>SMTPLIB</em>.<br><br>
                         It checks daily the price of a product on Amazon and if it's below a certain price I receive an email alerting me which also contains the page link for fast purchase.
                     </p>
-                </div>
-                <div class="desc">
-                    <ul class="container actions">
-                        <li class="row justify-content-center">
-                            <a href="https://github.com/jamesslinger/Amazon-Price-Checker" class="col-lg-4 col-md-6 col-sm-11 button">View Source Code</a>
-                        </li>
-                    </ul>
-                </div>
+              </div>
+                <ul class="container actions">
+                    <li class="row justify-content-center">
+                        <a href="https://github.com/jamesslinger/Amazon-Price-Checker" class="col-12 button">View Code</a>
+                    </li>
+                </ul>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h2>Will It Rain Today?</h2>
-                    <p>One of the first projects I completed that utilizes two different APIs and sends SMS messages.<br><br>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Will It Rain Today?</h5>
+                <p class="card-text"><br><p>One of the first projects I completed that utilizes two different APIs and sends SMS messages.<br><br>
                         Using <em>Python</em> this app checks the <em>OpenWeatherMap API</em> for the latest weather forcast in my area and if it's going to rain, It sends me an SMS message using the <em>Twilio API</em>.
                     </p>
-                </div>
-                <div class="desc">
-                    <ul class="container actions">
-                        <li class="row justify-content-center">
-                            <a href="https://github.com/jamesslinger/Will-It-Rain" class="col-lg-4 col-md-6 col-sm-11 button">View Source Code</a>
-                        </li>
-                    </ul>
-                </div>
+              </div>
+                <ul class="container actions">
+                    <li class="row justify-content-center">
+                        <a href="https://github.com/jamesslinger/Will-It-Rain" class="col-12 button">View Code</a>
+                    </li>
+                </ul>
             </div>
+          </div>
         </div>
 
         <hr>
